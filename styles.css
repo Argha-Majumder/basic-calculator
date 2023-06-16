@@ -1,0 +1,125 @@
+* {
+    position: relative;
+}
+
+body {
+    position: relative;
+    display: flex;
+    top: 80px;
+    justify-content: center;
+}
+
+#app {
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d4d5cc;
+}
+
+#calculator-name {
+    width: 96%;
+    height: 40px;
+    position: relative;
+    padding: 8px 0 8px 0;
+    background-color: black;
+}
+
+#calculator-name div {
+    width: 90%;
+    height: 20px;
+    padding: 10px;
+    left: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+}
+
+#displaying-calculation {
+    position: relative;
+    width: 96%;
+    height: 76px;
+    background-color: white;
+}
+
+#display {
+    position: absolute;
+    font-size: 2rem;
+    top: 10%;
+    right: 0%;
+}
+
+#all-buttons {
+    position: relative;
+    width: 96%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.column {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #d4d5cc;
+}
+
+.row {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    border: 1px solid #d4d5cc;
+}
+
+#all-buttons > div > div > span {
+    position: relative;
+    left: 48%;
+    top: 24%;
+}
+
+#all-buttons :first-child > div:nth-child(-n + 3) > span {
+    position: relative;
+    left: 43%;
+}
+
+#all-buttons :last-child > div:nth-child(2) > span {
+    position: relative;
+    left: 50%;
+}
+
+#all-buttons :last-child > div:first-child {
+    width: 50%;
+}
+
+#all-buttons > div > div:last-child {
+    background-color: #a73737;
+}
+
+#all-buttons > div > div:last-child > span {
+    color: white;
+}
+
+.row:hover {
+    cursor: pointer;
+    background-color: #f1b753;
+}
+
+span {
+    font-weight: 800;
+}
+
+span:hover {
+    transform: scale(1.4);
+}
